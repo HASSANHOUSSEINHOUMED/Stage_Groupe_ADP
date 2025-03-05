@@ -74,7 +74,7 @@ Ces projets ont permis d'améliorer la prise de décision basée sur les donnée
 
 ## Contact
 
-Pour plus d'informations sur ces projets ou pour discuter de collaborations professionnelles, n'hésitez pas à me contacter sur LinkedIn.
+Pour plus d'informations sur ces projets, n'hésitez pas à me contacter sur LinkedIn.
 
 ---
 
