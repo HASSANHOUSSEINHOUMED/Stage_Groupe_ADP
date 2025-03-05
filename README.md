@@ -4,7 +4,9 @@ Ce repository contient une collection de scripts et notebooks Python développé
 
 ## Présentation
 
-Durant ce stage en tant que Data Analyst/Scientist, j'ai travaillé sur plusieurs projets impliquant du data engineering, de la visualisation de données et de l'analyse de données avec des techniques d'intelligence artificielle.
+Durant ce stage en tant que Data Analyst/Scientist au sein du Groupe ADP, j'ai travaillé sur plusieurs projets impliquant du data engineering, de la visualisation de données et de l'analyse de données avec des techniques d'intelligence artificielle. Mon rôle était de participer au pilotage stratégique et opérationnel de l'entreprise à travers la valorisation des données.
+
+Ces projets ont permis d'améliorer la prise de décision basée sur les données, d'automatiser des processus critiques et de fournir des insights business pertinents aux différentes équipes opérationnelles et de direction.
 
 > **Note** : Ce repository ne contient que les scripts et le code source. Les données d'entreprise et informations confidentielles ont été retirées pour respecter la confidentialité du Groupe ADP.
 
