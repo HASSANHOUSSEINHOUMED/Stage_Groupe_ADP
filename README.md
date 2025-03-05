@@ -1,6 +1,6 @@
 # Projets Data Analyst/Scientist - Groupe ADP
 
-Ce repository contient une collection de scripts et notebooks Python développés durant mon stage au sein du Groupe ADP (Aéroports de Paris) de décembre 2023 à juin 2024.
+Ce repository contient une collection de scripts et notebooks Python développés durant mon stage au sein du Groupe ADP (Aéroports de Paris).
 
 ## Présentation
 
