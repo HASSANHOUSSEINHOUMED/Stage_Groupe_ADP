@@ -6,6 +6,7 @@
 
 **Entreprise** : Groupe ADP (Aéroports de Paris)  
 **Poste** : Data Analyst 
+
 **Période** : Décembre 2023 - Juin 2024  
 **Type** : Stage de fin d'études  
 
