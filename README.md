@@ -1,81 +1,178 @@
-# Projets Data Analyst/Scientist - Groupe ADP
-
-Ce repository contient une collection de scripts et notebooks Python développés durant mon stage au sein du Groupe ADP (Aéroports de Paris).
-
-## Présentation
-
-Durant ce stage en tant que Data Analyst/Scientist au sein du Groupe ADP, j'ai travaillé sur plusieurs projets impliquant du data engineering, de la visualisation de données et de l'analyse de données avec des techniques d'intelligence artificielle. Mon rôle était de participer au pilotage stratégique et opérationnel de l'entreprise à travers la valorisation des données.
-
-Ces projets ont permis d'améliorer la prise de décision basée sur les données, d'automatiser des processus critiques et de fournir des insights business pertinents aux différentes équipes opérationnelles et de direction.
-
-> **Note** : Ce repository ne contient que les scripts et le code source. Les données d'entreprise et informations confidentielles ont été retirées pour respecter la confidentialité du Groupe ADP.
-
-## Contenu du Repository
-
-### 1. Data Engineering
-
-- **`Function_Staging_API_v0_8.ipynb`** : Script pour l'extraction de données via API avec gestion des tokens d'authentification, pagination et suivi des échecs. Utilise PySpark pour stocker les métadonnées dans Hive.
-
-- **`Recuperation_donnee_Big_Query.ipynb`** : Script pour extraire des données de Google BigQuery et les enregistrer localement avec possibilité de filtrer par date.
-
-- **`Skytrax_finale.ipynb`** : Script complet d'ETL pour le traitement des données d'enquêtes Skytrax, comprenant l'extraction depuis des fichiers Excel, la transformation avec Pandas et PySpark, et le chargement dans différentes tables Hive (raw, exploitation, reporting).
-
-### 2. Data Cleaning & Preprocessing
-
-- **`Decoder_le_fichier_mal_encoder.ipynb`** : Utilitaire pour corriger les problèmes d'encodage dans les fichiers CSV en utilisant la bibliothèque ftfy.
-
-### 3. Data Collection
-
-- **`Scrapping_fruncfurt.ipynb`** : Script de web scraping pour collecter des données de produits depuis les sites d'aéroports (Frankfurt et Dubai Duty Free), implémenté en Python et en R.
-
-### 4. Intelligence Artificielle & NLP
-
-- **`Classification_NLP_POI_Magasin.ipynb`** : Modèle d'analyse NLP pour la classification et l'analyse de sentiment des commentaires clients sur les points d'intérêt commerciaux. Implémente plusieurs approches avancées :
-  - Détection de langue et traduction automatique
-  - Modélisation de sujets avec BERTopic
-  - Analyse de sentiment avec RoBERTa
-  - Classification zero-shot avec BART
-  - Classification supervisée avec SetFit (single-label et multi-label)
-  - Analyse de sentiment basée sur les aspects (ABSA) avec DeBERTa
-  - Optimisation d'hyperparamètres avec Optuna et suivi des expériences avec MLflow
-
-## Technologies Utilisées
-
-- **Langages** : Python, SQL, R
-- **Frameworks/Bibliothèques** : 
-  - PySpark
-  - Pandas
-  - BeautifulSoup
-  - Requests
-  - RSelenium
-  - Databricks
-  - Transformers (Hugging Face)
-  - PyTorch
-  - BERTopic
-  - BERT, RoBERTa, DeBERTa
-  - SetFit
-  - Optuna
-  - MLflow
-- **Stockage de données** : Hive, BigQuery
-- **APIs** : REST APIs avec authentification OAuth
-
-## Compétences Développées
-
-- Ingestion de données via API et web scraping
-- ETL (Extract, Transform, Load) avec PySpark
-- Automatisation des flux de données
-- Intégration des données dans un entrepôt de données (Hive)
-- Nettoyage et préparation des données
-- Transformation de données pour analyse et reporting
-- NLP avancé (classification de texte, analyse de sentiment)
-- Optimisation d'hyperparamètres et suivi d'expériences ML
-- Développement de modèles pour l'analyse d'e-réputation
-- Classification multi-label et analyse de sentiment basée sur les aspects
-
-## Contact
-
-Pour plus d'informations sur ces projets, n'hésitez pas à me contacter sur LinkedIn.
+# 📊 Stage Groupe ADP - Data Analyst Projects
 
 ---
 
-*Note : Ce repository contient uniquement du code et ne comprend aucune donnée appartenant au Groupe ADP. Tous les identifiants, secrets et informations sensibles ont été retirés.*
+## 📌 Contexte
+
+**Entreprise** : Groupe ADP (Aéroports de Paris)  
+**Poste** : Data Analyst 
+**Période** : Décembre 2023 - Juin 2024  
+**Type** : Stage de fin d'études  
+
+Collection de **scripts et notebooks Python** développés lors d'un stage opérationnel en Data Engineering, Data Visualization et Intelligence Artificielle pour supporter le pilotage stratégique et opérationnel d'une infrastructure aéroportuaire majeure.
+
+⚠️ **Confidentialité** : Ce repository contient uniquement le code source. Toutes les données d'entreprise, identifiants, secrets et informations sensibles ont été retirés pour respecter la confidentialité du Groupe ADP.
+
+---
+
+## 🎯 Mon Rôle & Contributions
+
+En tant que **Data Analyst**, j'ai participé à :
+
+✅ **Ingestion & intégration de données** - ETL multi-sources (APIs, BigQuery, fichiers)  
+✅ **Data Engineering production** - PySpark, Hive, automatisation pipelines  
+✅ **Nettoyage & préparation** - Gestion d'encodages, formatage, transformation  
+✅ **Web Scraping** - Collecte data via BeautifulSoup et Selenium  
+✅ **NLP avancé** - Classification texte, sentiment analysis, topic modeling  
+✅ **Insights métier** - Analyse d'e-réputation, support décisions opérationnelles  
+
+**Impact** : Automatisation de processus critiques, amélioration de la prise de décision data-driven, et fourniture d'insights actionnables aux équipes opérationnelles et direction.
+
+---
+
+## 📂 Projets Implémentés
+
+### 1️⃣ **Data Engineering**
+
+#### `Function_Staging_API_v0_8.ipynb`
+- **Objectif** : Extraction de données via API REST
+- **Fonctionnalités** : 
+  - Authentification OAuth + gestion des tokens
+  - Pagination automatique
+  - Gestion des erreurs et retry logic
+  - Stockage des métadonnées dans Hive via PySpark
+- **Stack** : Python, PySpark, Requests, Hive
+
+#### `Recuperation_donnee_Big_Query.ipynb`
+- **Objectif** : Extraction depuis Google BigQuery
+- **Fonctionnalités** :
+  - Connexion BigQuery authentifiée
+  - Filtrage par date et paramètres
+  - Sauvegarde locale optimisée
+- **Stack** : Python, Google BigQuery, Pandas
+
+#### `Skytrax_finale.ipynb`
+- **Objectif** : Pipeline ETL complet pour enquêtes Skytrax
+- **Fonctionnalités** :
+  - Extraction depuis Excel + fichiers structurés
+  - Transformation multi-étape (Pandas + PySpark)
+  - Chargement dans 3 tables Hive (raw → exploitation → reporting)
+  - Validation qualité données
+- **Stack** : Python, PySpark, Pandas, Hive, Excel
+
+---
+
+### 2️⃣ **Data Cleaning & Preprocessing**
+
+#### `Decoder_le_fichier_mal_encoder.ipynb`
+- **Objectif** : Correction des problèmes d'encodage de fichiers
+- **Problème résolu** : Fichiers CSV avec encodage corrompu
+- **Solution** : Détection + correction automatique avec `ftfy`
+- **Impact** : Données récupérables sans perte
+
+---
+
+### 3️⃣ **Data Collection (Web Scraping)**
+
+#### `Scrapping_fruncfurt.ipynb`
+- **Objectif** : Collecte de données de catalogues aéroportuaires
+- **Cibles** : Frankfurt Duty Free, Dubai Duty Free
+- **Méthode** : Web scraping avec BeautifulSoup (Python) et RSelenium (R)
+- **Données** : Prix, produits, disponibilité
+- **Stack** : Python, BeautifulSoup, RSelenium, Pandas
+
+---
+
+### 4️⃣ **Intelligence Artificielle & NLP Avancé**
+
+#### `Classification_NLP_POI_Magasin.ipynb` 🔥
+**Projet phare** : Analyse d'e-réputation multi-facettes sur commentaires clients
+
+**Modèles & Techniques Implémentées** :
+
+| Composant | Technologie | Objectif |
+|-----------|-------------|----------|
+| **Détection Langue** | langdetect | Identifier langue commentaires (multi-lingual) |
+| **Traduction Auto** | Google Translate API | Normaliser en anglais |
+| **Topic Modeling** | BERTopic | Découvrir thèmes majeurs |
+| **Sentiment Analysis** | RoBERTa | Classification polarité (positif/négatif/neutre) |
+| **Zero-Shot Classification** | BART | Catégoriser sans données labélisées |
+| **Classification Supervisée** | SetFit | Single-label + multi-label classification |
+| **Aspect-Based Sentiment** | DeBERTa + ABSA | Sentiments par aspect spécifique |
+| **Hyperparamètres** | Optuna | Optimisation automatique |
+| **Tracking Expériences** | MLflow | Suivi reproductibilité & comparaison modèles |
+
+**Valeur Métier** : Comprendre les opinions clients par point d'intérêt commercial, identifier axes d'amélioration, tracker satisfaction temps réel.
+
+---
+
+## 🛠️ Stack Technique
+
+### **Data Engineering**
+- ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+- ![PySpark](https://img.shields.io/badge/PySpark-FF6B6B?style=flat-square)
+- ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+- ![SQL](https://img.shields.io/badge/SQL-336791?style=flat-square&logo=postgresql&logoColor=white)
+
+### **APIs & Data Collection**
+- ![Requests](https://img.shields.io/badge/Requests-FFD43B?style=flat-square)
+- ![BeautifulSoup](https://img.shields.io/badge/BeautifulSoup-4-blue?style=flat-square)
+- ![RSelenium](https://img.shields.io/badge/R-Selenium-276DC3?style=flat-square)
+
+### **Cloud & Storage**
+- ![Google BigQuery](https://img.shields.io/badge/Google%20BigQuery-4285F4?style=flat-square&logo=google-cloud&logoColor=white)
+- ![Hive](https://img.shields.io/badge/Apache%20Hive-FDEE21?style=flat-square)
+- ![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=flat-square)
+
+### **NLP & Machine Learning**
+- ![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat-square)
+- ![Transformers](https://img.shields.io/badge/Transformers-orange?style=flat-square)
+- ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+- ![BERTopic](https://img.shields.io/badge/BERTopic-4-blue?style=flat-square)
+- ![SetFit](https://img.shields.io/badge/SetFit-blue?style=flat-square)
+- ![Optuna](https://img.shields.io/badge/Optuna-blue?style=flat-square)
+- ![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=flat-square)
+
+### **Autres Outils**
+- ![R](https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white)
+- ![ftfy](https://img.shields.io/badge/ftfy-Encoding-blue?style=flat-square)
+
+---
+
+## 📊 Résultats & Impact
+
+| Domaine | Réalisation | Impact |
+|---------|-------------|--------|
+| **ETL Automation** | 3 pipelines de données production-ready | Réduit temps d'intégration manuels |
+| **Data Cleaning** | Correction encodages problématiques | Données récupérées sans perte |
+| **Web Scraping** | 2 sources externes intégrées | Enrichissement données catalogues |
+| **NLP Models** | 7+ modèles NLP avancés | Analyse e-réputation complète |
+| **Decision Support** | Insights métier actionnables | Support pilotage direction |
+
+---
+
+## 🎓 Compétences Développées
+
+- ✅ **Data Engineering** - ETL, pipelines, PySpark
+- ✅ **API Integration** - Authentification OAuth, pagination, gestion erreurs
+- ✅ **Big Data** - Hive, BigQuery, Databricks
+- ✅ **Web Scraping** - BeautifulSoup, Selenium (Python & R)
+- ✅ **Data Cleaning** - Gestion encodages, formatage, validation
+- ✅ **NLP Avancé** - Transformers, BERTopic, SetFit, ABSA
+- ✅ **ML Ops** - Optuna hyperparameter tuning, MLflow tracking
+- ✅ **Business Analytics** - Insights clients, support décisions
+
+---
+
+## 👤 Auteur
+
+**Hassan HOUSSEIN HOUMED**  
+📚 Master 2 Ingénierie Mathématiques & Biostatistique - Université Paris Cité  
+💼 Data Analyst - Groupe ADP  
+📧 hassan.houssein.houmed@gmail.com  
+🐙 GitHub : https://github.com/HASSANHOUSSEINHOUMED
+
+---
+
+**Dernière mise à jour** : Décembre 2025  
+**Confidentialité** : Aucune donnée sensible du Groupe ADP n'est incluse ✅
