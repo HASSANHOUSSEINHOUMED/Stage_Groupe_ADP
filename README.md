@@ -292,7 +292,7 @@ Insights Layer
 
 **Hassan HOUSSEIN HOUMED**  
 📚 Mastèr 2 Ingénierie Mathématiques et Biostatistique - Université Paris Cité
-💼 Data Analyst - Groupe ADP (7 mois, Décembre 2023 - Juin 2024)  
+💼 Data Analyst - Groupe ADP (6 mois, Décembre 2023 - Juin 2024)  
 📧 hassan.houssein.houmed@gmail.com  
 🐙 GitHub : https://github.com/HASSANHOUSSEINHOUMED
 
